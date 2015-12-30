@@ -48,7 +48,7 @@ public class ErrorMessageBuilder {
     }
 
     private boolean hasMoreElements(Object[] valueArray, int index) {
-        return index < (valueArray.length + 1);
+        return index + 1 < valueArray.length;
     }
 
     public String build() {
